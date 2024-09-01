@@ -1,3 +1,8 @@
+/* 
+  Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
+  Content-Security-Policy: default-src 'self'
+
 /Build/*
   Content-Encoding: gzip
   Content-Type: application/javascript
@@ -5,3 +10,6 @@
 /TemplateData/*
   Content-Encoding: gzip
   Content-Type: text/plain
+
+/*.html
+  Cache-Control: max-age=0, no-cache, no-store, must-revalidate
