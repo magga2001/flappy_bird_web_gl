@@ -1,0 +1,7 @@
+/Build/*
+  Content-Encoding: gzip
+  Content-Type: application/javascript
+
+/TemplateData/*
+  Content-Encoding: gzip
+  Content-Type: text/plain
