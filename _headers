@@ -8,8 +8,7 @@
 
 /TemplateData/*.gz
   Content-Encoding: gzip
-  Content-Type: text/css
+  Content-Type: application/octet-stream
 
 /*.css
   Content-Type: text/css
-
