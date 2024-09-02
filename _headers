@@ -6,13 +6,9 @@
   Content-Type: application/javascript
   Content-Encoding: gzip
 
-/TemplateData/*.data.gz
+/TemplateData/*.gz
   Content-Encoding: gzip
   Content-Type: application/octet-stream
-
-/TemplateData/*.json.gz
-  Content-Encoding: gzip
-  Content-Type: application/json
 
 /*.css
   Content-Type: text/css
