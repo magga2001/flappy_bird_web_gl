@@ -1,10 +1,6 @@
-/Build/*.wasm.gz
+/Build/*.gz
+  Content-Encoding: gzip
   Content-Type: application/wasm
-  Content-Encoding: gzip
-
-/Build/*.js.gz
-  Content-Type: application/javascript
-  Content-Encoding: gzip
 
 /TemplateData/*.gz
   Content-Encoding: gzip
