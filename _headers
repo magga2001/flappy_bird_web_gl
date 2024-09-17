@@ -1,10 +1,18 @@
-/Build/*
+/Build/*.wasm.gz
+  Content-Type: application/wasm
   Content-Encoding: gzip
-  Content-Type: application/javascript
   Cache-Control: max-age=31536000
 
-/TemplateData/*
+/Build/*.js.gz
+  Content-Type: application/javascript
   Content-Encoding: gzip
+  Cache-Control: max-age=31536000
+
+/TemplateData/*.gz
+  Content-Type: text/css
+  Content-Encoding: gzip
+  Cache-Control: max-age=31536000
+
+/*.css
   Content-Type: text/css
   Cache-Control: max-age=31536000
-
