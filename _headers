@@ -1,16 +1,16 @@
-/Build/Flappy_bird_game.framework.js.br
+/Build/Flappy_bird_game.framework.js.gz
   Content-Type: application/javascript
-  Content-Encoding: br
+  Content-Encoding: gzip
   Cache-Control: max-age=31536000
 
-/Build/Flappy_bird_game.data.br
+/Build/Flappy_bird_game.data.gz
   Content-Type: application/octet-stream
-  Content-Encoding: br
+  Content-Encoding: gzip
   Cache-Control: max-age=31536000
 
-/Build/Flappy_bird_game.wasm.br
+/Build/Flappy_bird_game.wasm.gz
   Content-Type: application/wasm
-  Content-Encoding: br
+  Content-Encoding: gzip
   Cache-Control: max-age=31536000
 
 /Build/Flappy_bird_game.loader.js
