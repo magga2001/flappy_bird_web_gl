@@ -20,7 +20,7 @@
         background-color: black; /* Matches the game background to reduce black space perception */
       }
 
-      /* Center the Unity container and ensure it uses all available space */
+      /* Center the Unity container */
       #unity-container {
         position: relative;
         width: 100vw;    /* Full viewport width */
@@ -28,16 +28,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: black; /* Ensure no background shows */
+        margin: 0 auto;          /* Ensure the container is centered */
       }
 
-      /* Force the canvas to scale while preserving the 9:16 aspect ratio */
+      /* Ensure the canvas scales properly with the aspect ratio */
       #unity-canvas {
-        width: auto;     /* Automatically calculate width based on height */
-        height: 100%;    /* Always use the full height */
-        max-height: 100%; 
+        width: 100%;         /* Full width to cover the container */
+        height: 100%;        /* Full height */
+        max-width: 100%;     /* Ensure the canvas never exceeds 100% of the container */
+        max-height: 100%;    /* Ensure the canvas doesn't exceed the container height */
         aspect-ratio: 9 / 16; /* Maintain the 9:16 aspect ratio */
-        object-fit: contain;  /* Contain the content within the bounds without stretching */
+        object-fit: contain;  /* Fit the canvas inside without stretching */
+        display: block;
+        margin: 0 auto;      /* Ensure the canvas is centered horizontally */
       }
 
       /* Hide the fullscreen button */
