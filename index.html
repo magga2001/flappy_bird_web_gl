@@ -7,21 +7,30 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
-      /* Force the canvas container to maintain a 9:16 aspect ratio */
+      /* Force the canvas container to maintain a 9:16 aspect ratio and remove black spaces */
       #unity-container {
         width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: black; /* Optional: to match your game's background color */
       }
 
       #unity-canvas {
-        /* This ensures the aspect ratio is always 9:16 */
         width: 100%;
         height: auto;
         max-height: 100%;
         aspect-ratio: 9 / 16;
+        object-fit: cover;
+      }
+
+      /* Ensures canvas covers the available space and removes black bars */
+      body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
       }
     </style>
   </head>
@@ -79,7 +88,7 @@
         codeUrl: buildUrl + "/Flappy_bird_game.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Baby Neiro The Hero",
+        productName: "Flappy bird",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
