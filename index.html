@@ -7,30 +7,38 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
-      /* Force the canvas container to maintain a 9:16 aspect ratio and remove black spaces */
+      /* Ensure the body and HTML occupy the full viewport */
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black; /* Matches the game background to reduce black space perception */
+      }
+
+      /* Center the Unity container and make sure it uses all available space */
       #unity-container {
+        position: relative;
         width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black; /* Optional: to match your game's background color */
+        background-color: black; /* Ensure no other background shows */
       }
 
+      /* Force 9:16 aspect ratio, ensuring proper scaling */
       #unity-canvas {
         width: 100%;
         height: auto;
         max-height: 100%;
+        max-width: 100%;
         aspect-ratio: 9 / 16;
-        object-fit: cover;
-      }
-
-      /* Ensures canvas covers the available space and removes black bars */
-      body, html {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        height: 100%;
+        object-fit: contain;
       }
     </style>
   </head>
