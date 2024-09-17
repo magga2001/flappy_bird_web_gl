@@ -1,1 +1,10 @@
+/Build/*
+  Content-Encoding: gzip
+  Content-Type: application/javascript
+  Cache-Control: max-age=31536000
+
+/TemplateData/*
+  Content-Encoding: gzip
+  Content-Type: text/css
+  Cache-Control: max-age=31536000
 
